@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Drupal Cheat Sheet</title>
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			margin: 20px;
+		}
+		
+		h1 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			line-height: 1;
+			color: #000000;
+			font-size: 50px;
+			text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+			font-weight: bold;
+		}
+		
+		code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: blue;
+  font-size: 18px;
+  border-radius: 5px;
+  width: auto;
+  height: 40px;
+  border: 1px solid #07b92a;
+  position: relative;
+  transition: 0.3s;
+  background-color: #ffffff;
+		}
+		
+		pre {
+			background-color: #f8f8f8;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			overflow-x: auto;
+		}
+		
+		label {
+			font-weight: bold;
+			color: #333;
+			margin-bottom: 5px;
+			font-size: 20px;
+			display: block;
+			text-align: center;
+		}
+		
+		ul li {
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Drupal Cheat Sheet</h1>
+	<h2>Drupal Commands:</h2> <pre>
+        <label>Clear Cache</label>
+        <code><strong>drush cr</strong></code>
+
+        <label>Update Database</label>
+        <code><strong>drush updb</strong></code>
+
+        <label>Revert Feature</label>
+        <code><strong>drush fra</strong></code>
+
+        <label>Download Module</label>
+        <code><strong>drush dl module_name</strong></code>
+
+        <label>Enable Module</label>
+        <code><strong>drush en module_name</strong></code>
+
+        <label>Disable Module</label>
+        <code><strong>drush pm-disable module_name</strong></code>
+
+        <label>Uninstall Module</label>
+        <code><strong>drush pm-uninstall module_name</strong></code>
+
+        <label>List Installed Modules</label>
+        <code><strong>drush pm-list --type=Module --status=enabled</strong></code>
+
+        <label>Export Configuration</label>
+        <code><strong>drush cex</strong></code>
+
+        <label>Import Configuration</label>
+        <code><strong>drush cim</strong></code>
+
+        <label>Rebuild Registry</label>
+        <code><strong>drush rr</strong></code>
+
+        <label>Create User</label>
+        <code><strong>drush user-create username --password="password" --mail="email@example.com"</strong></code>
+
+        <label>Set Variable</label>
+        <code><strong>drush vset variable_name "value"</strong></code>
+
+        <label>Run Cron</label>
+        <code><strong>drush cron</strong></code>
+
+        <label>Theme Rebuild</label>
+        <code><strong>drush theme-rebuild</strong></code>
+    </pre>
+	<h2>Drupal Concepts:</h2>
+	<ul>
+		<li>Content Types - Basic structure for different types of content.</li>
+		<li>Blocks - Manage and place blocks in regions of your theme.</li>
+		<li>Views - Create dynamic lists of content.</li>
+		<li>Fields - Define reusable data types for content types.</li>
+		<li>Taxonomy - Categorize and tag content.</li>
+		<li>Nodes - Individual pieces of content.</li>
+		<li>Roles and Permissions - Manage user roles and their permissions.</li>
+		<li>Regions - Areas in a theme where blocks can be placed.</li>
+		<li>Themes - Customize the look and feel of your site.</li>
+		<li>Modules - Extend Drupal's functionality.</li>
+		<li>For more thorough and version-specific information, it is advised to consult the official Drupal documentation, to which this cheat sheet just serves as a fast reference: <a href="https://www.drupal.org/docs">Documentation for Drupal</a>. </li>
+	</ul>
+</body>
+
+</html>
